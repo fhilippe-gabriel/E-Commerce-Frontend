@@ -1,6 +1,10 @@
 import React, { Component, useState } from "react";
 
 class Formulario extends Component {
+  onEdit = (id) => {
+    // this.props.onEdit(id);
+    console.log("Editando Produto ", id);
+  };
   render() {
     return (
       <form className="space-y-6" action="#" method="POST">

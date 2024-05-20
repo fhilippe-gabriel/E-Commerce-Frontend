@@ -9,7 +9,7 @@ class Formulario extends Component {
   state = {
     produtos: {},
     produto: {},
-    url: "http://localhost:8000/api/produto",
+    url: "http://localhost:8000/api/produtos",
   };
   getProduto = async () => {
     this.setState({ loader: true });
@@ -23,6 +23,7 @@ class Formulario extends Component {
 
     this.getProduto();
   };
+
   createProduto = async (data) => {
     this.setState({ loader: true });
 
